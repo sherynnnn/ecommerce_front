@@ -18,7 +18,6 @@ function Login() {
 
   useEffect(() => {
     getUser(id).then((userData) => {
-      setLoading(false);
       setEmail(userData.email);
       setPassword(userData.password);
     });
